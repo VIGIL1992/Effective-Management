@@ -1,0 +1,744 @@
+
+        /* General Section Styling */
+        .get-started-section {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, rgb(112, 175, 241), #2559a5);
+            color: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            color: white;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .section-highlight {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #ffd700;
+        }
+
+        /* Button Group Styling */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .primary-btn {
+            background-color: #ffd700;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .primary-btn:hover {
+            background-color: #ffc107;
+            transform: scale(1.05);
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            color: #ffd700;
+            border: 2px solid #ffd700;
+        }
+
+        .secondary-btn:hover {
+            background-color: #ffd700;
+            color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-description,
+            .section-highlight {
+                font-size: 1rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+ /* Section Styling */
+ .handyman-services {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.handyman-services h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.handyman-services p {
+    font-size: 1rem;
+    color:  #6f6e77;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Image Styling */
+.image-content img {
+
+    /* width: 90%; */
+    /* border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.image-content img:hover {
+    /* transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .handyman-services {
+        text-align: center;
+    }
+
+    .row {
+        /* flex-direction: column-reverse; */
+    }
+
+    .image-content img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* General Section Styling */
+ .civil-masonry-services {
+    padding: 50px 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* General Section Styling */
+.services-section {
+    padding: 50px 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    text-align: left;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Service Row Styling */
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* Reduced gap between service cards */
+    justify-content: space-between;
+}
+
+/* Service Card Styling */
+.service-card1 {
+    flex: 1 1 calc(50% - 10px);
+    /* Adjusted for smaller gap */
+    padding: 10px;
+    /* Reduced padding inside each service card */
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #2559a5;
+    margin-bottom: 15px;
+}
+
+.service-card1 h3 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.service-card1 p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.service-card1 ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.service-card1 ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card1 {
+        flex: 1 1 100%;
+        /* 1 card per row on small devices */
+    }
+}
+
+
+
+
+
+    /* Section Styling */
+    .mep-importance {
+        padding: 90px 20px;
+        background-color: #eef2f7;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .mep-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .mep-description {
+        text-align: center;
+        font-size: 16px;
+        color: #555;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .mep-title {
+            font-size: 2rem;
+        }
+
+        .mep-description {
+            font-size: 1rem;
+            padding: 0 15px;
+        }
+    }
+
+
+
+
+
+     /* Section Styling */
+     .our-process {
+        padding: 60px 20px;
+        background-color: #f8f9fa;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+        margin-bottom: 40px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Process Steps Layout */
+    .process-steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .process-step {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(30% - 20px);
+        text-align: center;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .process-step1{
+
+        /* background-color: #ffffff; */
+        padding: 20px;
+        /* border-radius: 10px; */
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        flex: 1 1 calc(30% - 20px);
+        text-align: center;
+        /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+
+
+    }
+    .process-step2{
+
+        /* background-color: #ffffff; */
+        padding: 20px;
+        /* border-radius: 10px; */
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        flex: 1 1 calc(30% - 20px);
+        text-align: center;
+        /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+
+
+    }
+
+    .process-step:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .step-number {
+        background-color: #2559a5;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin: 0 auto 15px;
+    }
+
+    .process-step h3 {
+        font-size: 1.5rem;
+        color:black;
+        margin-bottom: 15px;
+    }
+
+    .process-step p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .process-steps {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .process-step {
+            flex: 1 1 100%;
+        }
+    }
+
+
+
+
+
+
+  
+    /* General Section Styling */
+    .handyman-process {
+        /* background-color: #f8f9fa; */
+        padding: 50px 20px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .process-title {
+        font-size: 2.5rem;
+        text-align: center;
+        color: black;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    /* Steps Row Styling */
+    .steps-row {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .step {
+        flex: 1 1 calc(25% - 20px);
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .step-icon {
+        font-size: 3rem;
+        color: #2559a5;
+        margin-bottom: 15px;
+    }
+
+    .step h3 {
+        font-size: 1.5rem;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .step p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+        .step {
+            flex: 1 1 calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .step {
+            flex: 1 1 100%;
+        }
+
+        .steps-row {
+            gap: 15px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .amc-benefits {
+        background-color: #f5f5f5;
+        padding: 60px 20px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+   
+    
+    .section-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color:black;
+        margin-bottom: 40px;
+    }
+    
+    .benefit-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .benefit-card {
+        background-color: #fff;
+        width: 100%;
+        max-width: 280px;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+        color: #2559a5;
+        margin-bottom: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color:black;
+        margin-bottom: 15px;
+    }
+    
+    .card-description {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+        }
+    
+        .section-title {
+            font-size: 1.75rem;
+        }
+    
+        .benefit-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .benefit-card {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+
+
+
+
+
+  
+    /* General Section Styling */
+    .annual-maintenance-contract {
+        padding: 50px 20px;
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .amc-process {
+        /* background-color: #f4f7fc; */
+        padding: 50px 0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .amc-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .amc-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color:black;
+        margin-bottom: 40px;
+    }
+    
+    .amc-steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .amc-step {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .amc-step:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .amc-step-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2559a5;
+        margin-bottom: 15px;
+    }
+    
+    .amc-step-title {
+        font-size: 1.25rem;
+        color: black;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .amc-step-description {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .amc-steps {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .amc-steps {
+            grid-template-columns: 1fr;
+        }
+    
+        .amc-title {
+            font-size: 1.75rem;
+        }
+    }
+
+
+
+
+
+
+
+    .amc-benefits {
+        background-color: #f5f5f5;
+        padding: 60px 20px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 40px;
+    }
+    
+    .benefit-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .benefit-card {
+        background-color: #fff;
+        width: 100%;
+        max-width: 280px;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+        color: #2559a5;
+        margin-bottom: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color:black;
+        margin-bottom: 15px;
+    }
+    
+    .card-description {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+        }
+    
+        .section-title {
+            font-size: 1.75rem;
+        }
+    
+        .benefit-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .benefit-card {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
