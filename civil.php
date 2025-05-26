@@ -10,13 +10,14 @@
     <meta name="keywords" content="">
     <meta name="robots" content="INDEX,FOLLOW">
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <?php
         include 'includes/header.php';
         // include 'includes/navbar.php';
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
-        // include 'includes/breadcrumber.php';
+        include 'includes/breadcrumber.php';
         $page = 'realestate';
     ?>
 
@@ -24,7 +25,7 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/civil1.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/civil1.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Civil / Masonry Works</h1>
@@ -36,43 +37,18 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener("scroll", function() {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/civil1.jpg')";
-            }
-        });
-    </script>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>Civil / Masonry Works</li>
+            </ul>
+        </div>
+    </div>
 
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
     <!--==============================
     Team Area  
     ==============================-->
@@ -117,76 +93,8 @@
     </section>
 
 
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our Civil / Masonry Services?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button style="margin-left: 150px;" data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
-                            <i class="fa-regular fa-arrow-left-long"></i>
-                        </button>
-                        <button style="margin-right: 150px;" data-slick-next="#service-slider5" class="slick-arrow slick-next">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Expert Craftsmanship</a></h3>
-                            <p class="service-card_text">Our experienced team of civil and masonry professionals is dedicated to delivering top-quality work, ensuring every project is completed with precision and care.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title"><a href="#">Durable & Reliable</a></h3>
-                            <p class="service-card_text">We use the best materials and construction techniques to guarantee the longevity and durability of our work.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title"><a href="#">Tailored Solutions</a></h3>
-                            <p class="service-card_text">We understand that each project is unique. We work closely with you to develop customized solutions that meet your specific requirements and budget.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title"><a href="#">Timely Project Completion</a></h3>
-                            <p class="service-card_text">We prioritize efficiency and ensure that all projects are completed on time, without compromising on quality.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
-                            <p class="service-card_text">We adhere to all local building codes, regulations, and safety standards, ensuring that your project is completed safely and legally.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
- 
+
 
 
     <section class="civil-masonry-services">
@@ -318,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
 
 
@@ -354,7 +262,7 @@
 
     <section class="our-process space-bottom">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
+            <h2 class="section-title">How Our Civil / Masonry Service Works</h2>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
@@ -391,8 +299,142 @@
 
 
 
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our Civil / Masonry Services?</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
+
+                <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-dollar-sign service-icon"></i>
+                                <h3 class="box-title"><a href="#">Expert Craftsmanship</a></h3>
+                                <p class="service-card_text">Our experienced team of civil and masonry professionals is dedicated to delivering top-quality work, ensuring every project is completed with precision and care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title"><a href="#">Durable & Reliable</a></h3>
+                                <p class="service-card_text">We use the best materials and construction techniques to guarantee the longevity and durability of our work.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title"><a href="#">Tailored Solutions</a></h3>
+                                <p class="service-card_text">We understand that each project is unique. We work closely with you to develop customized solutions that meet your specific requirements and budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-clock service-icon"></i>
+                                <h3 class="box-title"><a href="#">Timely Project Completion</a></h3>
+                                <p class="service-card_text">We prioritize efficiency and ensure that all projects are completed on time, without compromising on quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
+                                <p class="service-card_text">We adhere to all local building codes, regulations, and safety standards, ensuring that your project is completed safely and legally.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+        }
+    </style>
 
 
     <section class="cta-area-2 space darker-bg" data-bg-src="assets/img/bg/cta-bg3.jpg">
@@ -401,7 +443,7 @@
                 <div class="col-lg-9 text-center">
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
-                        <h2 class="sec-title text-white">Contact Us for Your Civil / Masonry Needs</h2>
+                        <h2 class="sec-title text-white">Ready to Get Started?</h2>
                         <p class="section-description">
                             At EFM, we are committed to delivering outstanding civil and masonry services tailored to meet the unique needs of your property. Whether you need a new structure, foundation repair, or aesthetic masonry work, our skilled team is here to help.
                         </p>
@@ -412,7 +454,8 @@
         </div>
     </section>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <?php
     include 'includes/footer.php';

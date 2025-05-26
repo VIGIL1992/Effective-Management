@@ -10,6 +10,7 @@
     <meta name="keywords" content="#">
     <meta name="robots" content="INDEX,FOLLOW">
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <?php
         include 'includes/header.php';
@@ -17,17 +18,17 @@
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
         $page = 'Specilized Services';
-        // include 'includes/breadcrumber.php';
+        include 'includes/breadcrumber.php';
     ?>
 
 
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/banner11.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/banner11.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
-                <h1 class="breadcumb-title">Specialized Services</h1>
+                <h1 class="breadcumb-title">What We Do</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="whatwedo.php">Services</a></li>
@@ -36,43 +37,19 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener("scroll", function() {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner11.jpg')";
-            }
-        });
-    </script>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>Specialized Services</li>
+            </ul>
+        </div>
+    </div>
 
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
 
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
     <!--==============================
     Team Area  
     ==============================-->
@@ -112,75 +89,7 @@
 
 
 
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our Specialized Services?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button style="margin-left: 150px;" data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
-                            <i class="fa-regular fa-arrow-left-long"></i>
-                        </button>
-                        <button style="margin-right: 150px;" data-slick-next="#service-slider5" class="slick-arrow slick-next">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Expert Technicians</a></h3>
-                            <p class="service-card_text ">Each service is handled by professionals with years of experience and specialized training to ensure the highest quality results.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title"><a href="#">Comprehensive Solutions</a></h3>
-                            <p class="service-card_text ">From installation to maintenance and repair, we provide end-to-end solutions for all your specialized needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title"><a href="#">Tailored Services</a></h3>
-                            <p class="service-card_text ">We understand that each client’s needs are unique, which is why we offer flexible, customizable solutions that fit your specific requirements.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title"><a href="#">Reliability & Efficiency</a></h3>
-                            <p class="service-card_text ">Our team is committed to delivering timely, reliable, and efficient services, ensuring that all tasks are completed to your satisfaction.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title"><a href="#">Cost-Effective Maintenance</a></h3>
-                            <p class="service-card_text ">Our services are designed to provide maximum value, ensuring your systems and equipment stay in top condition without breaking your budget.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
+
 
 
 
@@ -329,8 +238,141 @@
 
 
 
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our Specialized Services?</h2>
+                    </div>
+                </div>
 
+            </div>
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
 
+                <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-dollar-sign service-icon"></i>
+                                <h3 class="box-title"><a href="#">Expert Technicians</a></h3>
+                                <p class="service-card_text ">Each service is handled by professionals with years of experience and specialized training to ensure the highest quality results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title"><a href="#">Comprehensive Solutions</a></h3>
+                                <p class="service-card_text ">From installation to maintenance and repair, we provide end-to-end solutions for all your specialized needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title"><a href="#">Tailored Services</a></h3>
+                                <p class="service-card_text ">We understand that each client’s needs are unique, which is why we offer flexible, customizable solutions that fit your specific requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-clock service-icon"></i>
+                                <h3 class="box-title"><a href="#">Reliability & Efficiency</a></h3>
+                                <p class="service-card_text ">Our team is committed to delivering timely, reliable, and efficient services, ensuring that all tasks are completed to your satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title"><a href="#">Cost-Effective Maintenance</a></h3>
+                                <p class="service-card_text ">Our services are designed to provide maximum value, ensuring your systems and equipment stay in top condition without breaking your budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+        }
+    </style>
 
     <section class="cta-area-2 space darker-bg" data-bg-src="assets/img/bg/cta-bg3.jpg">
         <div class="container z-index-common">
@@ -338,7 +380,7 @@
                 <div class="col-lg-9 text-center">
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
-                        <h2 class="sec-title text-white">Contact Us for Your Specialized Service Needs</h2>
+                        <h2 class="sec-title text-white">Ready to Get Started?</h2>
                         <p class="section-description">
                             For more information on our specialized services or to request a consultation,
                             reach out to us today! Let us take care of your property’s unique needs with professional, reliable service.
@@ -351,7 +393,8 @@
     </section>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <?php
     include 'includes/footer.php';

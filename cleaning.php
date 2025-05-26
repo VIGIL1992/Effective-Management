@@ -10,6 +10,7 @@
     <meta name="keywords" content="#">
     <meta name="robots" content="INDEX,FOLLOW">
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <?php
         include 'includes/header.php';
@@ -17,7 +18,7 @@
 
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
-        // include 'includes/breadcrumber.php';
+        include 'includes/breadcrumber.php';
         $page = 'Cleaning';
     ?>
 
@@ -25,7 +26,7 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/cleaning1.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/cleaning1.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Cleaning</h1>
@@ -38,43 +39,17 @@
         </div>
     </div>
 
-    <script>
-        window.addEventListener("scroll", function() {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>Cleaning</li>
+            </ul>
+        </div>
+    </div>
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/cleaning1.jpg')";
-            }
-        });
-    </script>
-
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
     <!--==============================
     Team Area  
     ==============================-->
@@ -112,75 +87,7 @@
         </div>
     </section>
 
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our Cleaning Services?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button style="margin-left: 150px;" data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
-                            <i class="fa-regular fa-arrow-left-long"></i>
-                        </button>
-                        <button style="margin-right: 150px;" data-slick-next="#service-slider5" class="slick-arrow slick-next">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Experienced & Trained Team:</a></h3>
-                            <p class="service-card_text">Our cleaning professionals are trained to provide exceptional cleaning services, paying attention to every detail to ensure your space is spotless.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title"><a href="#">Customizable Solutions:</a></h3>
-                            <p class="service-card_text">We offer flexible cleaning plans tailored to meet your specific needs and schedule, ensuring the right services for your property.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title"><a href="#">High-Quality Equipment & Products:</a></h3>
-                            <p class="service-card_text pt-5">We use top-of-the-line cleaning tools and eco-friendly products to achieve the best results with minimal environmental impact.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title"><a href="#">Consistent Results:</a></h3>
-                            <p class="service-card_text">We maintain high standards of cleanliness and reliability, ensuring that you receive consistent, excellent service every time.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title"><a href="#">Trusted & Reliable:</a></h3>
-                            <p class="service-card_text">Our team is fully insured, background-checked, and trusted by many customers for providing safe, dependable, and trustworthy cleaning services.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
 
     <section class="space services-section">
         <div class="container">
@@ -298,34 +205,42 @@
     <section class="amc-benefits">
         <div class="container">
             <h2 class="section-title">Benefits of Professional Cleaning</h2>
-            <div class="benefit-cards">
-                <div class="benefit-card">
+            <div class="process-steps">
+                <div class="process-step">
                     <div class="card-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3 class="card-title pt-15">Time-Saving</h3>
-                    <p class="card-description pt-15">Professional cleaning frees up your time, so you can focus on your family, work, or business, while we take care of the cleaning.</p>
+                    <p class="card-description pt-15">
+                        Professional cleaning frees up your time, so you can focus on your family, work, or business, while we take care of the cleaning.
+                    </p>
                 </div>
-                <div class="benefit-card">
+                <div class="process-step">
                     <div class="card-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
                     <h3 class="card-title pt-15">Healthier Environment</h3>
-                    <p class="card-description pt-15">Regular professional cleaning reduces allergens, bacteria, and mold, promoting a healthier environment for your family or employees.</p>
+                    <p class="card-description pt-15">
+                        Regular professional cleaning reduces allergens, bacteria, and mold, promoting a healthier environment for your family or employees.
+                    </p>
                 </div>
-                <div class="benefit-card">
+                <div class="process-step">
                     <div class="card-icon">
                         <i class="fas fa-brush"></i>
                     </div>
                     <h3 class="card-title pt-15">Improved Aesthetics</h3>
-                    <p class="card-description pt-15">A clean space looks better and creates a positive impression on guests, clients, and employees.</p>
+                    <p class="card-description pt-15">
+                        A clean space looks better and creates a positive impression on guests, clients, and employees.
+                    </p>
                 </div>
-                <div class="benefit-card">
+                <div class="process-step">
                     <div class="card-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3 class="card-title pt-15">Increased Longevity</h3>
-                    <p class="card-description pt-15">Regular cleaning helps preserve your furniture, carpets, and surfaces, extending their lifespan and saving you money in the long term.</p>
+                    <p class="card-description pt-15">
+                        Regular cleaning helps preserve your furniture, carpets, and surfaces, extending their lifespan and saving you money in the long term.
+                    </p>
                 </div>
             </div>
         </div>
@@ -337,7 +252,7 @@
 
     <section class="our-process space bottom">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
+            <h2 class="section-title">How Our Cleaning Service Works</h2>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
@@ -359,10 +274,7 @@
                     <h3 class="pt-15">Feedback & Adjustments</h3>
                     <p class="pt-15">We value your feedback and make any necessary adjustments to ensure that you’re fully satisfied with the cleaning services provided.</p>
                 </div>
-                <div class="process-step1">
-                </div>
-                <div class="process-step1">
-                </div>
+
             </div>
         </div>
     </section>
@@ -370,11 +282,145 @@
 
 
 
+    <!-- WHY CHOOSE US -->
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our Cleaning Services?</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
+
+                <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-dollar-sign service-icon"></i>
+                                <h3 class="box-title"><a href="#">Experienced & Trained Team:</a></h3>
+                                <p class="service-card_text">Our cleaning professionals are trained to provide exceptional cleaning services, paying attention to every detail to ensure your space is spotless.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title"><a href="#">Customizable Solutions:</a></h3>
+                                <p class="service-card_text">We offer flexible cleaning plans tailored to meet your specific needs and schedule, ensuring the right services for your property.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title"><a href="#">High-Quality Equipment & Products:</a></h3>
+                                <p class="service-card_text pt-3">We use top-of-the-line cleaning tools and eco-friendly products to achieve the best results with minimal environmental impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-clock service-icon"></i>
+                                <h3 class="box-title"><a href="#">Consistent Results:</a></h3>
+                                <p class="service-card_text">We maintain high standards of cleanliness and reliability, ensuring that you receive consistent, excellent service every time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title"><a href="#">Trusted & Reliable:</a></h3>
+                                <p class="service-card_text">Our team is fully insured, background-checked, and trusted by many customers for providing safe, dependable, and trustworthy cleaning services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
 
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
 
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
 
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+        }
+    </style>
 
 
 
@@ -384,7 +430,7 @@
                 <div class="col-lg-9 text-center">
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
-                        <h2 class="sec-title text-white">Contact Us for Your Cleaning Needs</h2>
+                        <h2 class="sec-title text-white">Ready to Get Started?</h2>
                         <p class="section-description">
                             At EFM, we are committed to delivering superior cleaning services tailored to your specific needs.
                             Whether you need routine home cleaning, office cleaning, or specialized services, our professional team is here to help.
@@ -397,10 +443,11 @@
     </section>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <?php
-    include 'includes/footer.php';
-    include 'includes/scripts.php';
+        include 'includes/footer.php';
+        include 'includes/scripts.php';
     ?>

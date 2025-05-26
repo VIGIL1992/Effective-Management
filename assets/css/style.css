@@ -1023,8 +1023,8 @@ textarea.is-invalid {
 .slick-arrow {
   display: inline-block;
   padding: 0;
-  background-color: var(--white-color);
-  color: var(--title-color);
+  /* background-color: var(--white-color); */
+  /* color: var(--title-color); */
   position: absolute;
   top: 50%;
   border: none;
@@ -1045,13 +1045,13 @@ textarea.is-invalid {
 }
 
 .slick-arrow.slick-next {
-  right: var(--pos-x, -100px);
+  right: var(--pos-x, -15px);
   left: auto;
 }
 
 .slick-arrow:hover {
-  background-color: var(--theme-color);
-  color: var(--white-color);
+  /* background-color: var(--theme-color); */
+  /* color: var(--white-color); */
 }
 
 .arrow-style2 .slick-arrow {
@@ -2102,7 +2102,7 @@ textarea.is-invalid {
 }
 
 .box-title {
-  height: 61px;
+  height: 71px;
   font-size: 24px;
   line-height: 1.417;
   font-weight: 700;
@@ -6485,7 +6485,7 @@ a.text-theme:hover,
   word-break: break-word;
   font-weight: 700;
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 15px;
   color: var(--white-color);
 }
 
@@ -15235,6 +15235,8 @@ color: white;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   text-align: center;
+
+  height: 450px;
 }
 
 .service-card .shape-icon img {

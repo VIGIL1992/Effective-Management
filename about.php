@@ -12,66 +12,41 @@
     <meta name="robots" content="INDEX,FOLLOW">
 
     <?php
-        include 'includes/header.php'; 
+        include 'includes/header.php';
         include 'includes/navbar_new.php';
         // include 'includes/navbar.php';
         include 'includes/whatsapp.php';
         include 'includes/breadcrumber.php';
-        $page='about';
+        $page = 'about';
     ?>
 
 
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/banner15.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/banner15.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Who We Are</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
-                    <li>About Us</li>
+                    <li>About</li>
                 </ul>
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener("scroll", function () {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner15.jpg')";
-            }
-        });
-    </script>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
 
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
 
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
     <!--==============================
     About Area  
     ==============================-->
@@ -101,13 +76,13 @@
                         <h5>Your Trusted Partner in Maintenance and Facility Management</h5>
                     </div>
                     <p class="mt-n2 mb-35">
-                    At EFM, we specialize in facility management, home and office maintenance, handyman, and cleaning services. 
-                    Serving clients across the Northern Emirates,
-                     we deliver tailored, detail-oriented, and high-quality solutions designed to meet your unique needs.
+                        At EFM, we specialize in facility management, home and office maintenance, handyman, and cleaning services.
+                        Serving clients across the Northern Emirates,
+                        we deliver tailored, detail-oriented, and high-quality solutions designed to meet your unique needs.
                     </p>
-                    <p>As a privately owned business with over 5 years of experience, we bring a wealth of expertise to every project. 
+                    <p>As a privately owned business with over 5 years of experience, we bring a wealth of expertise to every project.
                         Our tailored quotations and outstanding customer support reflect our commitment to excellence in service delivery.</p>
-                     
+
                     <div class="about-grid-wrap mb-40">
                         <div class="thumb"><img class="tilt-active" src="assets/img/normal/about-2.jpg" alt="img"></div>
                         <div class="details">
@@ -115,7 +90,7 @@
                                 <h3 class="about-grid_year"><span class="counter-number">5</span>+</h3>
                                 <span class="about-grid_text">Years of Experience <br></span>
                             </div>
-                            <p class="mb-n2">Effective is proud to be a leading force in the field of facility management 
+                            <p class="mb-n2">Effective is proud to be a leading force in the field of facility management
                                 services, setting standards for reliability, quality, and customer satisfaction.</p>
                         </div>
                     </div>
@@ -133,7 +108,7 @@
     <!--==============================
     Faq Area
     ==============================-->
-    <div class="space-bottom" style="margin-bottom: 90px;">
+    <div class="space-bottom">
         <div class="container">
             <div class="row gy-80 justify-content-center">
                 <style>
@@ -143,30 +118,30 @@
                 </style>
                 <!-- Single Item -->
                 <div class="col-sm-6 col-xl-4 col-lg-6 col-md-4">
-                    <div class="about-feature2">
+                    <div class="about-feature2" style="min-height: 400px;">
                         <div class="feature_icon">
                             <img src="assets/img/icon/feature-icon1.svg" alt="Icon">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Our Mission</h3>
                             <p class="about-feature_text justify-content">
-                                Dedicated to pioneering innovation, we strive to redefine standards, offering 
+                                Dedicated to pioneering innovation, we strive to redefine standards, offering
                                 tailored solutions for sustainable progress and client-centric excellence.
-                            </p> 
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Item -->
                 <div class="col-sm-6 col-xl-4 col-lg-6 col-md-4">
-                    <div class="about-feature2">
+                    <div class="about-feature2" style="min-height: 400px;">
                         <div class="feature_icon">
                             <img src="assets/img/icon/feature-icon2.svg" alt="Icon">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Our Vision</h3>
-                            <p class="about-feature_text" >
-                                Envisioning a future where reliability meets innovation, we aim to be the foremost 
+                            <p class="about-feature_text">
+                                Envisioning a future where reliability meets innovation, we aim to be the foremost
                                 industry leader, setting benchmarks for transformative solutions.
                             </p>
                         </div>
@@ -175,14 +150,14 @@
 
                 <!-- Single Item -->
                 <div class="col-sm-6 col-xl-4 col-lg-6 col-md-4">
-                    <div class="about-feature2">
+                    <div class="about-feature2" style="min-height: 400px;">
                         <div class="feature_icon">
                             <img src="assets/img/icon/feature-icon3.svg" alt="Icon">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title ">Trusted Services</h3>
-                            <p class="about-feature_text justify-content ">Delivering unwavering reliability and quality, our trusted services encompass expertise, 
-                                                            precision, and dedication, ensuring unparalleled satisfaction.</p>
+                            <p class="about-feature_text justify-content ">Delivering unwavering reliability and quality, our trusted services encompass expertise,
+                                precision, and dedication, ensuring unparalleled satisfaction.</p>
                         </div>
                     </div>
                 </div>
@@ -201,14 +176,17 @@
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
                         <h2 class="sec-title text-white">Commercial Solutions For Your Business</h2>
+                        <p class="section-description" style="color: white;">
+                            
+                        </p>
                     </div>
                     <a href="contact.php" class="th-btn style3">Make an Appointment <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
     </section>
- 
+
     <?php
-        include 'includes/footer.php'; 
-        include 'includes/scripts.php';
+    include 'includes/footer.php';
+    include 'includes/scripts.php';
     ?>

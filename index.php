@@ -244,18 +244,7 @@
       data-no-minify="1"
       data-rocketlazyloadscript="1"
     ></script>
-    <script
-		data-cfasync="false"
-		data-wpfc-render="false"
-		id="monsterinsights-frontend-script-js-extra"
-		type="pmdelayedscript"
-		data-no-optimize="1"
-		data-no-defer="1"
-		data-no-minify="1"
-		data-rocketlazyloadscript="1"
-    	>
-      var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/smartcrowd.ae","hash_tracking":"false","v4_id":"G-S8B5740TEP"};
-    </script>
+  
     
     <script
       src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.4?ver=6.7.1"
@@ -267,125 +256,7 @@
       data-no-minify="1"
       data-rocketlazyloadscript="1"
     ></script>
-    <script id="cmplz-tcf-js-extra">
-      var cmplz_tcf = {
-        cmp_url: "http:\/\/smartcrowd.ae\/wp-content\/uploads\/complianz\/",
-        retention_string: "Retention in days",
-        undeclared_string: "Not declared",
-        isServiceSpecific: "1",
-        excludedVendors: {
-          15: 15,
-          46: 46,
-          56: 56,
-          66: 66,
-          110: 110,
-          119: 119,
-          139: 139,
-          141: 141,
-          174: 174,
-          192: 192,
-          262: 262,
-          295: 295,
-          375: 375,
-          377: 377,
-          387: 387,
-          415: 415,
-          427: 427,
-          431: 431,
-          435: 435,
-          508: 508,
-          512: 512,
-          521: 521,
-          527: 527,
-          528: 528,
-          531: 531,
-          544: 544,
-          569: 569,
-          581: 581,
-          587: 587,
-          615: 615,
-          626: 626,
-          644: 644,
-          667: 667,
-          713: 713,
-          733: 733,
-          734: 734,
-          736: 736,
-          748: 748,
-          756: 756,
-          776: 776,
-          806: 806,
-          822: 822,
-          836: 836,
-          856: 856,
-          876: 876,
-          879: 879,
-          882: 882,
-          888: 888,
-          890: 890,
-          894: 894,
-          901: 901,
-          909: 909,
-          970: 970,
-          975: 975,
-          986: 986,
-          996: 996,
-          1013: 1013,
-          1015: 1015,
-          1018: 1018,
-          1022: 1022,
-          1039: 1039,
-          1044: 1044,
-          1051: 1051,
-          1075: 1075,
-          1078: 1078,
-          1079: 1079,
-          1094: 1094,
-          1107: 1107,
-          1121: 1121,
-          1124: 1124,
-          1139: 1139,
-          1141: 1141,
-          1149: 1149,
-          1156: 1156,
-          1164: 1164,
-          1167: 1167,
-          1173: 1173,
-          1181: 1181,
-          1199: 1199,
-          1211: 1211,
-          1216: 1216,
-          1252: 1252,
-          1263: 1263,
-          1293: 1293,
-          1294: 1294,
-          1298: 1298,
-          1302: 1302,
-          1305: 1305,
-          1319: 1319,
-          1342: 1342,
-          1343: 1343,
-          1351: 1351,
-          1355: 1355,
-          1363: 1363,
-          1365: 1365,
-          1366: 1366,
-          1368: 1368,
-          1371: 1371,
-          1373: 1373,
-        },
-        purposes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-        specialPurposes: [1, 2],
-        features: [1, 2, 3],
-        specialFeatures: [],
-        publisherCountryCode: "AE",
-        lspact: "N",
-        ccpa_applies: "",
-        ac_mode: "1",
-        debug: "",
-        prefix: "cmplz_",
-      };
-    </script>
+ 
     <script
       data-minify="1"
       defer
@@ -396,10 +267,7 @@
       src="wp-content/plugins/elementor-pro/assets/js/page-transitions.min9e35.js?ver=3.26.2"
       id="page-transitions-js"
     ></script>
-    <script
-      src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
-      id="jquery-core-js"
-    ></script>
+ 
     
     <script
       data-minify="1"
@@ -642,61 +510,8 @@
         ) !important;
       }
     </style>
-    <style type="text/css">
-      /** Mega Menu CSS: fs **/
-    </style>
-    <style id="wpforms-css-vars-root">
-      :root {
-        --wpforms-field-border-radius: 3px;
-        --wpforms-field-border-style: solid;
-        --wpforms-field-border-size: 1px;
-        --wpforms-field-background-color: #ffffff;
-        --wpforms-field-border-color: rgba(0, 0, 0, 0.25);
-        --wpforms-field-border-color-spare: rgba(0, 0, 0, 0.25);
-        --wpforms-field-text-color: rgba(0, 0, 0, 0.7);
-        --wpforms-field-menu-color: #ffffff;
-        --wpforms-label-color: rgba(0, 0, 0, 0.85);
-        --wpforms-label-sublabel-color: rgba(0, 0, 0, 0.55);
-        --wpforms-label-error-color: #d63637;
-        --wpforms-button-border-radius: 3px;
-        --wpforms-button-border-style: none;
-        --wpforms-button-border-size: 1px;
-        --wpforms-button-background-color: #066aab;
-        --wpforms-button-border-color: #066aab;
-        --wpforms-button-text-color: #ffffff;
-        --wpforms-page-break-color: #066aab;
-        --wpforms-background-image: none;
-        --wpforms-background-position: center center;
-        --wpforms-background-repeat: no-repeat;
-        --wpforms-background-size: cover;
-        --wpforms-background-width: 100px;
-        --wpforms-background-height: 100px;
-        --wpforms-background-color: rgba(0, 0, 0, 0);
-        --wpforms-background-url: none;
-        --wpforms-container-padding: 0px;
-        --wpforms-container-border-style: none;
-        --wpforms-container-border-width: 1px;
-        --wpforms-container-border-color: #000000;
-        --wpforms-container-border-radius: 3px;
-        --wpforms-field-size-input-height: 43px;
-        --wpforms-field-size-input-spacing: 15px;
-        --wpforms-field-size-font-size: 16px;
-        --wpforms-field-size-line-height: 19px;
-        --wpforms-field-size-padding-h: 14px;
-        --wpforms-field-size-checkbox-size: 16px;
-        --wpforms-field-size-sublabel-spacing: 5px;
-        --wpforms-field-size-icon-size: 1;
-        --wpforms-label-size-font-size: 16px;
-        --wpforms-label-size-line-height: 19px;
-        --wpforms-label-size-sublabel-font-size: 14px;
-        --wpforms-label-size-sublabel-line-height: 17px;
-        --wpforms-button-size-font-size: 17px;
-        --wpforms-button-size-height: 41px;
-        --wpforms-button-size-padding-h: 15px;
-        --wpforms-button-size-margin-top: 10px;
-        --wpforms-container-shadow-size-box-shadow: none;
-      }
-    </style>
+  
+   
     <noscript
       ><style>
         .perfmatters-lazy[data-src] {
@@ -786,6 +601,13 @@
     />
     
   </head>
+
+  
+  <?php
+
+include 'includes/whatsapp.php';
+?>
+
   <body
     data-cmplz="2"
     class="home page-template-default page page-id-193 wp-custom-logo wp-embed-responsive mega-menu-max-mega-menu-1 elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-193"
@@ -802,7 +624,6 @@
     <?php
 
       include_once 'home_nav.php';
-      include 'includes/whatsapp.php';
 
     ?>
 
@@ -939,165 +760,72 @@
         </div>
       </div>
 
-      <!-- Video Section Start -->
-   <!-- Add this where you want the video section in your index page -->
-
-   <div class="elementor-element elementor-element-video-section e-con-full"
-    id="videoSection"
-    style="
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        background: #000;
-        margin: 0 !important;
-        padding: 0 !important;
-    ">
-
-    <img id="videoBackgroundImage"
-        src="assets/img/banner/v1.png"
-        alt="Video Background"
-        style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-            clip-path: ellipse(80px 125px at 50% 50%);
-            transition: clip-path 0.8s cubic-bezier(0.33, 1, 0.68, 1);
-            will-change: clip-path;
-        ">
-
-    <video id="videoElement"
-        muted loop playsinline
-        style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            transition: opacity 0.8s ease;
-            z-index: 2;
-        ">
-        <source src="assets/video/video1.mp4" type="video/mp4">
-    </video>
-</div>
-
-<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    const videoSection = document.getElementById('videoSection');
-    const image = document.getElementById('videoBackgroundImage');
-    const video = document.getElementById('videoElement');
-
-    let videoReady = false;
-    let animationFrame;
-    let lastScroll = 0;
-
-    // Ensure video plays when ready
-    function handleVideoReady() {
-        videoReady = true;
-        video.play().catch(e => {
-            console.log("Autoplay blocked, showing controls");
-            video.controls = true;
-            video.muted = false; // Unmute if controls are shown
-        });
-    }
-
-    video.addEventListener('loadeddata', handleVideoReady);
-    video.addEventListener('canplay', handleVideoReady);
-
-    // Preload video
-    video.preload = "auto";
-
-    // More reliable video error handling
-    video.addEventListener('error', () => {
-        console.error("Video error", video.error);
-        videoReady = false;
-    });
-
-    // Improved scroll handler with throttling
-    function handleScroll() {
-        const now = Date.now();
-        if (now - lastScroll < 16) return; // ~60fps throttle
-        lastScroll = now;
-
-        cancelAnimationFrame(animationFrame);
-        animationFrame = requestAnimationFrame(() => {
-            const rect = videoSection.getBoundingClientRect();
-            const viewportHeight = window.innerHeight;
-            const sectionTop = rect.top;
-            const sectionHeight = rect.height;
-
-            // Calculate when the top of the image reaches the center of the screen
-            const triggerPoint = viewportHeight / 2;
-
-            // Calculate visibility ratio based on the trigger point
-            let visibility = 0;
-            if (sectionTop < triggerPoint && sectionTop + sectionHeight > triggerPoint) {
-                const overlap = Math.min(triggerPoint, sectionTop + sectionHeight) - Math.max(triggerPoint - sectionHeight, sectionTop);
-                visibility = overlap / sectionHeight;
-            }
-
-            // Only animate when the top of the section is at or above the center
-            if (sectionTop <= triggerPoint) {
-                // Smooth progress calculation (0 when top at center, 1 when bottom at center)
-                const progress = Math.min(Math.max(0, (triggerPoint - sectionTop) / (sectionHeight)), 1);
-
-                // Image expansion from center
-                const baseSize = Math.min(80, 125);
-                const expandedSize = Math.max(window.innerWidth, window.innerHeight) * 1.5;
-                const currentSize = baseSize + (expandedSize - baseSize) * progress;
-
-                image.style.clipPath = progress > 0.95 ?
-                    'none' :
-                    `ellipse(${currentSize}px ${currentSize}px at 50% 50%)`;
-
-                // Video fade in
-                const fadeStart = 0.2; // Start fading in earlier
-                const fadeProgress = Math.min(Math.max(0, (progress - fadeStart) / (1 - fadeStart)), 1);
-
-                if (videoReady) {
-                    video.style.opacity = fadeProgress;
-                    if (fadeProgress > 0.5 && video.paused) {
-                        video.play().catch(e => console.log("Play attempt failed:", e));
-                    }
-                }
-            } else {
-                // Reset the image when above the center
-                image.style.clipPath = 'ellipse(80px 125px at 50% 50%)';
-                video.style.opacity = 0;
-                if (videoReady && !video.paused) {
-                    video.pause();
-                }
-            }
-        });
-    }
-
-    // Use IntersectionObserver for initial load play
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && videoReady && video.paused) {
-                video.play().catch(e => console.log("Intersection play failed:", e));
-            }
-        });
-    }, {threshold: 0.1});
-
-    observer.observe(videoSection);
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-
-    // Initialize
-    handleScroll();
-});
-</script>
-      <!-- video section end -->
+      <div
+        class="elementor-element elementor-element-3a12258c e-con-full e-flex e-con e-parent"
+        data-id="3a12258c"
+        data-element_type="container"
+        id="videoBox"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div
+          class="elementor-element elementor-element-54a28761 e-con-full stepsPinContainer e-flex e-con e-child"
+          data-id="54a28761"
+          data-element_type="container"
+        >
+          <div
+            class="elementor-element elementor-element-5e20c900 elementor-widget__width-auto imgRef elementor-widget elementor-widget-image"
+            data-id="5e20c900"
+            data-element_type="widget"
+            data-widget_type="image.default"
+          >
+            <div class="elementor-widget-container">
+              <img
+                fetchpriority="high"
+                decoding="async"
+                width="1920"
+                height="1080"
+                src="assets/img/banner/v1.png"
+                class="attachment-full size-full wp-image-112265"
+                alt="#"
+                srcset="assets/img/banner/v1.png"
+                sizes="(max-width: 1920px) 100vw, 1920px"
+                title="videoThumbnail "
+              />
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-a5bca76 videoRef elementor-widget elementor-widget-video"
+            data-id="a5bca76"
+            data-element_type="widget"
+            data-settings='{"video_type":"hosted","show_image_overlay":"yes","image_overlay":{"url":"assets/video/video1.mp4","id":112265,"size":"","alt":"","source":"library"},"controls":"yes"}'
+            data-widget_type="video.default"
+          	>
+            <div class="elementor-widget-container">
+              <div class="e-hosted-video elementor-wrapper elementor-open-inline" >
+                <video
+                  class="elementor-video perfmatters-lazy"
+                  autoplay muted loop
+                  preload="metadata"
+                  controlsList="nodownload"
+                  data-src="assets/video/video1.mp4"
+                	>
+                </video>
+                <noscript>
+                  <video
+                      class="elementor-video"
+                      src="assets/video/video1.mp4"
+                      autoplay muted loop
+                      preload="metadata"
+                      controlsList="nodownload"
+                      >
+                  </video>
+                </noscript>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div
         data-wpr-lazyrender="1"
@@ -1907,10 +1635,10 @@ document.addEventListener('DOMContentLoaded', function() {
       src="wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6"
       id="wp-i18n-js"
     ></script>
-    <script id="wp-i18n-js-after">
+    <!-- <script id="wp-i18n-js-after">
       wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
-    </script>
-    <script id="elementor-pro-frontend-js-before">
+    </script> -->
+    <!-- <script id="elementor-pro-frontend-js-before">
       var ElementorProFrontendConfig = {
         ajaxurl: "https:\/\/smartcrowd.ae\/wp-admin\/admin-ajax.php",
         nonce: "eccb93d071",
@@ -1949,16 +1677,16 @@ document.addEventListener('DOMContentLoaded', function() {
             "https:\/\/smartcrowd.ae\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
         },
       };
-    </script>
-    <script
+    </script> -->
+    <!-- <script
       src="wp-content/plugins/elementor-pro/assets/js/frontend.min9e35.js?ver=3.26.2"
       id="elementor-pro-frontend-js"
-    ></script>
-    <script
+    ></script> -->
+    <!-- <script
       src="wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3"
       id="jquery-ui-core-js"
-    ></script>
-    <script id="elementor-frontend-js-before">
+    ></script> -->
+    <!-- <script id="elementor-frontend-js-before">
       var elementorFrontendConfig = {
         environmentMode: {
           edit: false,
@@ -2087,15 +1815,15 @@ document.addEventListener('DOMContentLoaded', function() {
             "https:\/\/smartcrowd.ae\/wp-content\/uploads\/2023\/10\/Web-preview-1-1024x502.jpg",
         },
       };
-    </script>
-    <script
+    </script> -->
+    <!-- <script
       src="wp-content/plugins/elementor/assets/js/frontend.min7ac2.js?ver=3.26.3"
       id="elementor-frontend-js"
-    ></script>
-    <script
+    ></script> -->
+    <!-- <script
       src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min9e35.js?ver=3.26.2"
       id="pro-elements-handlers-js"
-    ></script>
+    ></script> -->
     <script
       data-minify="1"
       src="wp-content/cache/min/1/ajax/libs/gsap/3.12.2/gsap.min70fe.js?ver=1735746374"
@@ -2591,41 +2319,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       document.addEventListener("DOMContentLoaded", pmeAnimation);
     </script>
-    <script>
-      (function () {
-        function c() {
-          var b = a.contentDocument || a.contentWindow.document;
-          if (b) {
-            var d = b.createElement("script");
-            d.innerHTML =
-              "window.__CF$cv$params={r:'90c232593e677f1f',t:'MTczODU4MzM1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/6682e961b853/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";
-            b.getElementsByTagName("head")[0].appendChild(d);
-          }
-        }
-        if (document.body) {
-          var a = document.createElement("iframe");
-          a.height = 1;
-          a.width = 1;
-          a.style.position = "absolute";
-          a.style.top = 0;
-          a.style.left = 0;
-          a.style.border = "none";
-          a.style.visibility = "hidden";
-          document.body.appendChild(a);
-          if ("loading" !== document.readyState) c();
-          else if (window.addEventListener)
-            document.addEventListener("DOMContentLoaded", c);
-          else {
-            var e = document.onreadystatechange || function () {};
-            document.onreadystatechange = function (b) {
-              e(b);
-              "loading" !== document.readyState &&
-                ((document.onreadystatechange = e), c());
-            };
-          }
-        }
-      })();
-    </script>
+   
 
     <iframe src="home_service.php" id="serviceIframe" style="width:100%; min-height: 800px; border: none; margin-bottom: -50px;overflow: hidden;"></iframe>
 
@@ -2659,7 +2353,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     </style>
 
-    <div style="background-color: #080e1c;">
+    <!-- <div style="background-color: #080e1c;">
       <iframe src="home_cta.php" id="ctaIframe" style="width:100%;  border: none; margin-bottom: -20px; overflow: hidden;"></iframe>
       <style>
         #ctaIframe {
@@ -2672,47 +2366,14 @@ document.addEventListener('DOMContentLoaded', function() {
               }
           }
       </style>
-      <iframe src="home_footer.php" id="footerIframe" style="width:100%; min-height: 681px; border: none; margin-bottom: -10px;"></iframe>
-      <style>
-        #footerIframe{
 
-        }
-
-        /* Tablet screens (below 1024px) */
-        @media (max-width: 1024px) {
-              #footerIframe {
-                  height: 680px;
-                  overflow: hidden;
-                  margin-top: -15px;
-              }
-          }
-
-          @media (max-width: 991px) {
-              #footerIframe {
-                  height: 750px;
-                  overflow: hidden;
-                  margin-top: -15px;
-              }
-          }
-          /* Mobile screens (below 768px) */
-          @media (max-width: 767px) {
-              #footerIframe {
-                  height: 1196px;
-                  overflow: hidden;
-                  margin-top: -15px;
-              }
-          }
-
-          /* Very small screens (below 480px) */
-          @media (max-width: 508px) {
-              #footerIframe {
-                  height: 1223px;
-                  overflow: hidden;
-                  margin-top: -15px;
-              }
-          }
-      </style>
-    </div>
+      
+    </div> -->
+      <?php
+        // include 'home_service.php';
+        include 'home_cta.php';
+        include 'includes/footer.php';
+      ?>
   </body>
   
 </html>

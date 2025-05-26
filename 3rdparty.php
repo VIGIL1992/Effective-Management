@@ -11,14 +11,15 @@
     <meta name="robots" content="INDEX,FOLLOW">
 
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <?php
-    include 'includes/header.php';
-    include 'includes/navbar_new.php';
-    // include 'includes/navbar.php';
-    include 'includes/whatsapp.php';  
-    // include 'includes/breadcrumber.php';
+        include 'includes/header.php';
+        include 'includes/navbar_new.php';
+        // include 'includes/navbar.php';
+        include 'includes/whatsapp.php';
+        include 'includes/breadcrumber.php';
 
-    $page = 'realestate';
+        $page = 'realestate';
     ?>
 
 
@@ -27,10 +28,10 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex" style="background-image: url('assets/img/banner/banner2.jpg');" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/banner2.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
-                <h1 class="breadcumb-title">3rd Party Contractor Management</h1>
+                <h1 class="breadcumb-title">What We Do</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="whatwedo.php">Services</a></li>
@@ -40,44 +41,17 @@
         </div>
     </div>
 
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>3rd Party Contractor Management</li>
+            </ul>
+        </div>
+    </div>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
-
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner2.jpg')";
-            }
-        });
-    </script>
-
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
 
     <!--==============================
     Team Area  
@@ -123,80 +97,7 @@
 
 
 
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our Third-Party Contractor Management?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev"><i class="fa-regular fa-arrow-left-long"></i></button>
-                        <button data-slick-next="#service-slider5" class="slick-arrow slick-next"><i class="fa-regular fa-arrow-right-long"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3"
-                data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Cost-Effective Solutions:</a></h3>
-                            <p class="service-card_text">With a fixed annual fee, our AMC offers predictable and affordable maintenance costs, helping you budget for property upkeep.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title "><a href="#">Expertise in Contractor Management:</a></h3>
-                            <p class="service-card_text pt-5">Our team has years of experience in managing contractors across various industries, ensuring the best results for your projects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title  "><a href="#">Comprehensive Oversight:</a></h3>
-                            <p class="service-card_text">From contractor selection to project completion, we provide comprehensive oversight to ensure high-quality work and compliance with deadlines.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title  "><a href="#">Safety & Compliance:</a></h3>
-                            <p class="service-card_text">We ensure that all work meets local regulations, industry standards, and safety requirements, mitigating risks to your project.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title  "><a href="#">Quality Assurance:</a></h3>
-                            <p class="service-card_text">Our rigorous quality checks ensure that contractors deliver work that meets your high standards, guaranteeing the success of the project.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title "><a href="#">Transparent Communication:</a></h3>
-                            <p class="service-card_text">We provide regular updates and maintain open communication channels, ensuring you are always informed about your project’s progress.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
 
@@ -237,7 +138,7 @@
                             <div class="service-bg-shape"><img src="assets/img/service/service_box_shape1.jpg" alt="img"></div>
                             <div class="service-box_content">
                                 <div class="service-default-icon">
-                                    <img src="assets/img/icon/project-management.png" alt="Icon"> 
+                                    <img src="assets/img/icon/project-management.png" alt="Icon">
                                     <span class="dots"></span>
                                 </div>
                                 <h3 class="box-title"><a href="#" tabindex="0">Project Coordination & Scheduling</a></h3>
@@ -261,7 +162,7 @@
                             </div>
                             <div class="service-box_content">
                                 <div class="service-default-icon">
-                                    <img src="assets/img/icon/assurance.png" alt="Icon"> 
+                                    <img src="assets/img/icon/assurance.png" alt="Icon">
                                     <span class="dots"></span>
                                 </div>
                                 <h3 class="box-title"><a href="#" tabindex="0">Quality Control & Compliance Monitoring</a></h3>
@@ -283,7 +184,7 @@
                             <div class="service-bg-shape"><img src="assets/img/service/service_box_shape1.jpg" alt="img"></div>
                             <div class="service-box_content">
                                 <div class="service-default-icon">
-                                    <img src="assets/img/icon/benefit.png" alt="Icon"> 
+                                    <img src="assets/img/icon/benefit.png" alt="Icon">
                                     <span class="dots"></span>
                                 </div>
                                 <h3 class="box-title"><a href="#" tabindex="0">Budget & Cost Control</a></h3>
@@ -309,7 +210,7 @@
                             </div>
                             <div class="service-box_content">
                                 <div class="service-default-icon">
-                                    <img src="assets/img/icon/reconciliation.png" alt="Icon"> 
+                                    <img src="assets/img/icon/reconciliation.png" alt="Icon">
                                     <span class="dots"></span>
                                 </div>
                                 <h3 class="box-title"><a href="#" tabindex="0">Dispute Resolution & Contractor Relations</a></h3>
@@ -342,7 +243,7 @@
 
     <section class="our-process space-bottom">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
+            <h2 class="section-title">How Our Third-Party Contractor Management Service Works</h2>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
@@ -370,9 +271,8 @@
                     <p class="pt-15">We ensure all work is completed to your satisfaction, handle any outstanding issues, and provide final documentation and reports.</p>
                 </div>
 
-                <div class="process-step1">  
-                </div>
-               
+
+
             </div>
         </div>
     </section>
@@ -381,10 +281,152 @@
 
 
 
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our Third-Party Contractor Management?</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
+
+                <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3"
+                    data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-dollar-sign service-icon"></i>
+                                <h3 class="box-title"><a href="#">Cost-Effective Solutions:</a></h3>
+                                <p class="service-card_text">With a fixed annual fee, our AMC offers predictable and affordable maintenance costs, helping you budget for property upkeep.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title "><a href="#">Expertise in Contractor Management:</a></h3>
+                                <p class="service-card_text pt-5">Our team has years of experience in managing contractors across various industries, ensuring the best results for your projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title  "><a href="#">Comprehensive Oversight:</a></h3>
+                                <p class="service-card_text">From contractor selection to project completion, we provide comprehensive oversight to ensure high-quality work and compliance with deadlines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-clock service-icon"></i>
+                                <h3 class="box-title  "><a href="#">Safety & Compliance:</a></h3>
+                                <p class="service-card_text">We ensure that all work meets local regulations, industry standards, and safety requirements, mitigating risks to your project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title  "><a href="#">Quality Assurance:</a></h3>
+                                <p class="service-card_text">Our rigorous quality checks ensure that contractors deliver work that meets your high standards, guaranteeing the success of the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title "><a href="#">Transparent Communication:</a></h3>
+                                <p class="service-card_text">We provide regular updates and maintain open communication channels, ensuring you are always informed about your project’s progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
 
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
 
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+        }
+    </style>
 
 
     <section class="cta-area-2 space darker-bg" data-bg-src="assets/img/bg/cta-bg3.jpg">
@@ -393,7 +435,7 @@
                 <div class="col-lg-9 text-center">
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
-                        <h2 class="sec-title text-white">Contact Us for Third-Party Contractor Management</h2>
+                        <h2 class="sec-title text-white">Ready to Get Started?</h2>
                         <p class="section-description">
                             If you need help managing contractors for your next project, we’re here to ensure it’s completed successfully, efficiently, and on budget.
                             Contact us today to learn more about our third-party contractor management services or to request a consultation.
@@ -408,7 +450,8 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <?php

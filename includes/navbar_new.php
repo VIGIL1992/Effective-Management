@@ -57,34 +57,7 @@
 ==============================-->
 <header class="th-header header-layout1">
     <div class="sticky-wrapper">
-        <!-- <div class="header-top">
-            <div class="container th-container">
-                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
-                    <div class="col-auto d-none d-lg-block">
-                        <div class="header-links">
-                                <ul>
-                                    <li><i class="far fa-phone"></i><a href="tel:+11156456825">+971 (123) 456 789</a></li>
-                                    <li><i class="far fa-envelope-open"></i><a href="mailto:info@effective.com">info@effective.com</a></li>
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="header-links">
-                            <ul>
-                                <li>
-                                    <div class="social-links" style="margin-top: -6px;">
-                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        
         <!-- Main Menu Area -->
         <div class="menu-area">
                 <div class="container th-container">

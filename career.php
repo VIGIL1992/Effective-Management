@@ -10,20 +10,20 @@
     <meta name="keywords" content="Ruffer - Roof Construction & Roofing Service HTML Template">
     <meta name="robots" content="INDEX,FOLLOW">
 
-    
+
     <?php
-        include 'includes/header.php'; 
+        include 'includes/header.php';
         // include 'includes/navbar.php';
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
-        // include 'includes/breadcrumber.php';
-        $page='career';
+        include 'includes/breadcrumber.php';
+        $page = 'career';
     ?>
 
     <!--==============================
     Breadcumb
-============================== -->
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/banner/careers1.jpg" data-overlay="black" data-opacity="7">
+    ============================== -->
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/careers1.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Career</h1>
@@ -34,44 +34,17 @@
             </div>
         </div>
     </div>
-    <!-- 
-    <script>
-        window.addEventListener("scroll", function () {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/careers1.jpg')";
-            }
-        });
-    </script>
-
-    <style>
-    .sticky-breadcrumb {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: var(--title-color);
-        padding: 80px 0 30px;
-        z-index: 10;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .breadcumb-menu {
-        display: none;
-    }
-    </style> -->
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li>Career</li>
+            </ul>
+        </div>
+    </div>
+   
     <!--==============================
     Contact Area  
     ==============================-->
@@ -84,10 +57,10 @@
                         <h2 class="sec-title">Want To Be A Part Of Effective Facilities Management</h2>
                     </div>
                     <p class="mt-n2 mb-45 text-xl-start text-center">
-                        Here at Effective Facilities Management, we are always on the look 
-                        out for committed, talented and motivated individuals to join our team. If you are 
-                        interested in joining Effective Facilities Management, please forward your CV to us, 
-                        stating the area of our organisation you are interested in joining. 
+                        Here at Effective Facilities Management, we are always on the look
+                        out for committed, talented and motivated individuals to join our team. If you are
+                        interested in joining Effective Facilities Management, please forward your CV to us,
+                        stating the area of our organisation you are interested in joining.
                     </p>
                     <!-- <div class="row justify-content-center gy-30">
                         <div class="col-xl-6 col-lg-4 col-md-6">
@@ -146,10 +119,10 @@
             </div>
         </div>
     </div>
-    
 
 
-<?php
-    include 'includes/footer.php'; 
+
+    <?php
+    include 'includes/footer.php';
     include 'includes/scripts.php';
-?>
+    ?>

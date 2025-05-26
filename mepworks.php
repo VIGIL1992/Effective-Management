@@ -10,13 +10,14 @@
     <meta name="keywords" content="">
     <meta name="robots" content="INDEX,FOLLOW">
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <?php
         include 'includes/header.php';
         // include 'includes/navbar.php';
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
-        // include 'includes/breadcrumber.php';
+        include 'includes/breadcrumber.php';
         $page = 'mepworks';
     ?>
 
@@ -24,10 +25,10 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex" data-bg-src="assets/img/banner/banner5.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/banner5.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
-                <h1 class="breadcumb-title">MEP Works</h1>
+                <h1 class="breadcumb-title">Mep Works</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="whatwedo.php">Services</a></li>
@@ -36,43 +37,19 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener("scroll", function () {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner5.jpg')";
-            }
-        });
-    </script>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>Mep Works</li>
+            </ul>
+        </div>
+    </div>
 
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
+    <!--  -->
 
 
     <section class=" space handyman-services">
@@ -104,74 +81,7 @@
         </div>
     </section>
 
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our MEP Services?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button style="margin-left: 150px;" data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
-                            <i class="fa-regular fa-arrow-left-long"></i>
-                        </button>
-                        <button style="margin-right: 150px;" data-slick-next="#service-slider5" class="slick-arrow slick-next">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Experienced Professionals</a></h3>
-                            <p class="service-card_text">Our MEP engineers and technicians are certified, highly skilled, and experienced in providing top-quality services for residential and commercial properties.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title"><a href="#">Comprehensive Services</a></h3>
-                            <p class="service-card_text">From design and installation to maintenance and repairs, we offer a full spectrum of MEP services that address all your needs under one roof.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
-                            <p class="service-card_text">We prioritize safety and adhere to local codes and regulations, ensuring all work is compliant and safe.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title"><a href="#">Energy Efficiency</a></h3>
-                            <p class="service-card_text">We provide energy-efficient solutions, including smart systems and technologies, to help reduce operational costs and minimize environmental impact.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title"><a href="#">24/7 Emergency Services</a></h3>
-                            <p class="service-card_text">Our team is available around the clock for emergency repairs and urgent service requests to ensure minimal disruption to your property.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
 
@@ -187,7 +97,7 @@
 
                     <!-- Electrical Services -->
                     <div class="col-lg-6">
-                        <div class="service-box " style="min-height: 913px;" >
+                        <div class="service-box " style="min-height: 913px;">
                             <div class="service-bg-shape"><img
                                     src="assets/img/service/service_box_shape1.jpg" alt="img"></div>
                             <div class="service-box_content">
@@ -219,7 +129,7 @@
 
                     <!-- Mechanical Services -->
                     <div class="col-lg-6">
-                        <div class="service-box"style="min-height: 913px;" >
+                        <div class="service-box" style="min-height: 913px;">
                             <div class="service-bg-shape"><img
                                     src="assets/img/service/service_box_shape1.jpg" alt="img"></div>
                             <div class="service-box_content">
@@ -246,7 +156,7 @@
 
                     <!-- Plumbing Services -->
                     <div class="col-lg-6">
-                        <div class="service-box"style="min-height: 913px;" >
+                        <div class="service-box" style="min-height: 913px;">
                             <div class="service-bg-shape"><img
                                     src="assets/img/service/service_box_shape1.jpg" alt="img"></div>
                             <div class="service-box_content">
@@ -293,7 +203,7 @@
 
     <section class="our-process space-bottom">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
+            <h2 class="section-title">How Our Mep Service Works</h2>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
@@ -320,14 +230,14 @@
                     <h3 class="pt-15">Repairs & Upgrades</h3>
                     <p class="pt-15">If your systems experience issues, our technicians are always available to perform quick, reliable repairs or upgrades to enhance functionality.</p>
                 </div>
-                <div class="process-step1">
-                   
-                   
+                <!-- <div class="process-step1">
+
+
                 </div>
                 <div class="process-step1">
-                   
-                   
-                </div>
+
+
+                </div> -->
             </div>
         </div>
     </section>
@@ -341,19 +251,171 @@
 
 
 
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our MEP Services?</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
+                <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="">
+                            <div class="service-content">
+                                <i class="fa-solid fa-dollar-sign service-icon"></i>
+                                <h3 class="box-title"><a href="#">Experienced Professionals</a></h3>
+                                <p class="service-card_text">
+                                    Our MEP engineers and technicians are certified, highly skilled, and experienced 
+                                    in providing top-quality services for residential and commercial properties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title"><a href="#">Comprehensive Services</a></h3>
+                                <p class="service-card_text">
+                                    From design and installation to maintenance and repairs, we offer a full spectrum 
+                                    of MEP services that address all your needs under one roof.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
+                                <p class="service-card_text">
+                                    We prioritize safety and adhere to local codes and regulations, ensuring all work is compliant and safe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="">
+                            <div class="service-content">
+                                <i class="fa-solid fa-clock service-icon"></i>
+                                <h3 class="box-title"><a href="#">Energy Efficiency</a></h3>
+                                <p class="service-card_text">
+                                    We provide energy-efficient solutions, including smart systems and technologies, 
+                                    to help reduce operational costs and minimize environmental impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title"><a href="#">24/7 Emergency Services</a></h3>
+                                <p class="service-card_text">
+                                    Our team is available around the clock for emergency repairs and urgent 
+                                    service requests to ensure minimal disruption to your property.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
 
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
 
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+
+            
+        }
+        /* .service-card{
+            height: 450px;
+        }  */
+    </style>
+
+    <!-- cta Starts -->
     <section class="cta-area-2 space darker-bg" data-bg-src="assets/img/bg/cta-bg3.jpg">
         <div class="container z-index-common">
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <div class="title-area mb-40">
                         <!-- <span class="sub-title style2">offers both roof leak & roof repair services</span> -->
-                        <h2 class="sec-title text-white">Contact Us for Your MEP Service Needs</h2>
+                        <h2 class="sec-title text-white">Ready to Get Started?</h2>
                         <p class="section-description">
                             At EFM, we are committed to delivering high-quality MEP services that exceed your expectations. Whether you're dealing with electrical,
                             mechanical, or plumbing issues, we have the expertise to handle it all. Contact us today for a consultation or to schedule an appointment.
@@ -366,7 +428,10 @@
     </section>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <?php
-    include 'includes/footer.php';
-    include 'includes/scripts.php';
+        include 'includes/footer.php';
+        include 'includes/scripts.php';
     ?>

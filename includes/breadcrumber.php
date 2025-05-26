@@ -1,37 +1,56 @@
+<style>
+     
+
+    .sticky-breadcumb ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .sticky-breadcumb ul li {
+        display: inline;
+        color: white;
+        margin: 0 5px;
+    }
+
+
+   
+
+    .sticky-breadcumb {
+        position: fixed;
+        top: 80px; /* Push below the navbar */
+        left: 0;
+        width: 100%;
+        background: var(--title-color, #000);
+        padding: 15px 0;
+        z-index: 10;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-10px);
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .sticky-breadcumb.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+
+
+
+    </style>
+
 <script>
     window.addEventListener("scroll", function () {
-        let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-        let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-        let breadcrumbTitle = document.querySelector(".breadcumb-title");
+        let stickyBreadcrumb = document.querySelector(".sticky-breadcumb");
 
-        if (window.scrollY > 150) {
-            breadcrumbWrapper.classList.add("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "none";
-            breadcrumbWrapper.style.background = "var(--title-color)";
-            breadcrumbWrapper.style.backgroundImage = "none";
-            breadcrumbMenu.style.display = "block";
+        if (window.scrollY > 500) {
+            stickyBreadcrumb.classList.add("show");
         } else {
-            breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "block";
-            breadcrumbWrapper.style.background = "";
-            breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner2.jpg')";
+            stickyBreadcrumb.classList.remove("show");
         }
     });
 </script>
-
-<style>
-.sticky-breadcrumb {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--title-color);
-    padding: 80px 0 30px;
-    z-index: 10;
-    transition: all 0.3s ease-in-out;
-}
-
-.breadcumb-menu {
-    display: none;
-}
-</style>

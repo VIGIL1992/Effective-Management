@@ -12,19 +12,18 @@
     <meta name="robots" content="INDEX,FOLLOW">
 
     <?php
-        include 'includes/header.php'; 
+        include 'includes/header.php';
         // include 'includes/navbar.php';
         include 'includes/navbar_new.php';
         include 'includes/whatsapp.php';
-        // include 'includes/breadcrumber.php';
-        $page='service';
+        include 'includes/breadcrumber.php';
+        $page = 'service';
     ?>
+
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " 
-        data-bg-src="assets/img/bg/breadcumb-bg.png" 
-        data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/bg/breadcumb-bg.png" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">What We Do</h1>
@@ -36,43 +35,19 @@
         </div>
     </div>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li>What We Do</li>
+            </ul>
+        </div>
+    </div>
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/bg/breadcumb-bg.png')";
-            }
-        });
-    </script>
 
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
 
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
+
     <!--==============================
     Service Area  
     ==============================-->
@@ -86,7 +61,7 @@
                             <div class="service-featured_img">
                                 <img src="assets/img/service/real.jpg" alt="service">
                             </div>
-                            
+
                             <div class="service-featured_content">
                                 <div class="service-bg-shape">
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
@@ -96,18 +71,18 @@
                                 </div>
                                 <h3 class="box-title">Corporate Realestate Services</h3>
                                 <p class="service-featured_text">
-                                    Property management is a vital part of any real estate business. Without proper management, 
+                                    Property management is a vital part of any real estate business. Without proper management,
                                     properties won't make money.
                                 </p>
                                 <div class="link-btn">
                                     Read More<i class="fa-solid fa-arrow-up-right ms-2"></i>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Handy Man -->
                 <div class="col-md-6 col-lg-4">
                     <a href="handyman.php">
@@ -115,24 +90,24 @@
                             <div class="service-featured_img">
                                 <img src="assets/img/service/handyman3.jpg" alt="service">
                             </div>
-                            
+
                             <div class="service-featured_content">
                                 <div class="service-bg-shape">
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
                                 </div>
                                 <div class="service-default-icon">
-                                <img src="assets/img/icon/handyman.png" alt="Icon">
+                                    <img src="assets/img/icon/handyman.png" alt="Icon">
                                 </div>
                                 <h3 class="box-title">Handy Man</h3>
                                 <p class="service-featured_text">
-                                    A handyman, also known as a fixer, handyperson or handyworker, maintenance worker, 
+                                    A handyman, also known as a fixer, handyperson or handyworker, maintenance worker,
                                     repair worker, or repair technician<br><br>
                                 </p>
                                 <div class="link-btn">
                                     Read More<i class="fa-solid fa-arrow-up-right ms-2"></i>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </a>
                 </div>
@@ -149,7 +124,7 @@
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
                                 </div>
                                 <div class="service-default-icon">
-                                <img src="assets/img/icon/mep.png" alt="Icon">
+                                    <img src="assets/img/icon/mep.png" alt="Icon">
                                 </div>
                                 <h3 class="box-title">MEP Works</h3>
                                 <p class="service-featured_text">
@@ -171,7 +146,7 @@
                             <div class="service-featured_img">
                                 <img src="assets/img/service/civil4.jpg" alt="service">
                             </div>
-                            
+
                             <div class="service-featured_content">
                                 <div class="service-bg-shape">
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
@@ -188,11 +163,11 @@
                                     Read More<i class="fa-solid fa-arrow-up-right ms-2"></i>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </a>
                 </div>
-                
+
 
                 <!-- Carpentry Works -->
                 <div class="col-md-6 col-lg-4">
@@ -201,7 +176,7 @@
                             <div class="service-featured_img">
                                 <img src="assets/img/service/carpentry1.jpg" alt="service">
                             </div>
-                            
+
                             <div class="service-featured_content">
                                 <div class="service-bg-shape">
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
@@ -257,7 +232,7 @@
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
                                 </div>
                                 <div class="service-default-icon">
-                                <img src="assets/img/icon/cleaning.png" alt="Icon">
+                                    <img src="assets/img/icon/cleaning.png" alt="Icon">
                                 </div>
                                 <h3 class="box-title">Cleaning</h3>
                                 <p class="service-featured_text">
@@ -310,9 +285,9 @@
                                     <img src="assets/img/icon/3rd.png" alt="Icon">
                                 </div>
                                 <h3 class="box-title">3rd Party Contractor Management</h3>
-                                <p class="service-featured_text">
+                                <p class="service-featured_text pt-4">
                                     Streamlining Your Projects with Expertise
-                                    <br><br>
+                                    
                                 </p>
                                 <div class="link-btn">Read More<i class="fa-solid fa-arrow-up-right ms-2"></i></div>
                             </div>
@@ -327,7 +302,7 @@
                             <div class="service-featured_img">
                                 <img src="assets/img/service/spec_service1.jpg" alt="service">
                             </div>
-                            
+
                             <div class="service-featured_content">
                                 <div class="service-bg-shape">
                                     <img src="assets/img/service/service_box_shape1.jpg" alt="img">
@@ -342,7 +317,7 @@
                                 </p>
                                 <div class="link-btn">Read More<i class="fa-solid fa-arrow-up-right ms-2"></i></div>
                             </div>
-                            
+
                         </div>
                     </a>
                 </div>
@@ -352,13 +327,13 @@
     </section>
     <style>
         .service-featured:hover .service-featured_text,
-        .service-featured:hover .box-title{
+        .service-featured:hover .box-title {
             color: white !important;
         }
     </style>
-    
-   
-<?php
-    include 'includes/footer.php'; 
+
+
+    <?php
+    include 'includes/footer.php';
     include 'includes/scripts.php';
-?>
+    ?>

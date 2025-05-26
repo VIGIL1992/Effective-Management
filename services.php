@@ -22,16 +22,23 @@
     Breadcumb
 ============================== -->
     <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.png" data-overlay="black" data-opacity="7">
-        <div class="container">
+        <div class="container cnt11">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Carpentry Works</h1>
-                <ul class="breadcumb-menu">
+                <ul class="breadcumb-menu" style="margin-top: 10px;">
                     <li><a href="index.php">Home</a></li>
                     <li>Carpentry Works</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <style>
+        .cnt11 {
+
+            height: 0px;
+        }
+    </style>
     <!--==============================
 Team Area  
 ==============================-->

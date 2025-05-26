@@ -11,21 +11,22 @@
     <meta name="keywords" content="#">
     <meta name="robots" content="INDEX,FOLLOW">
     <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <?php
-    include 'includes/header.php';
-    // include 'includes/navbar.php';
-    include 'includes/navbar_new.php';
-    include 'includes/whatsapp.php';
-    // include 'includes/breadcrumber.php';
-    $page = 'realestate';
+        include 'includes/header.php';
+        // include 'includes/navbar.php';
+        include 'includes/navbar_new.php';
+        include 'includes/whatsapp.php';
+        include 'includes/breadcrumber.php';
+        $page = 'realestate';
     ?>
 
 
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/realestate1.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/realestate1.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Corporate Realestate Services</h1>
@@ -37,43 +38,17 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener("scroll", function() {
-            let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-            let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-            let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-            if (window.scrollY > 500) {
-                breadcrumbWrapper.classList.add("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "none";
-                breadcrumbWrapper.style.background = "var(--title-color)";
-                breadcrumbWrapper.style.backgroundImage = "none";
-                breadcrumbMenu.style.display = "block";
-            } else {
-                breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-                breadcrumbTitle.style.display = "block";
-                breadcrumbWrapper.style.background = "";
-                breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/realestate1.jpg')";
-            }
-        });
-    </script>
-
-    <style>
-        .sticky-breadcrumb {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--title-color);
-            padding: 80px 0 30px;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .breadcumb-menu {
-            /* display: none; */
-        }
-    </style>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="whatwedo.php">Services</a></li>
+                <li>Corporate Realestate Services</li>
+            </ul>
+        </div>
+    </div>
 
     <!--==============================
     Breadcumb End
@@ -109,83 +84,6 @@
     <!--==============================
     Team Area  End
     ==============================-->
-
-    <!--==============================
-    WHY CHOOS US
-    ==============================-->
-    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="title-area"><span class="sub-title">WHY CHOOSE US</span>
-                        <h2 class="sec-title">Why Choose Our Corporate Real Estate Services?</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-lg-end align-self-center">
-                    <div class="arrow-wrap style3 mb-lg-0 mb-30">
-                        <button style="margin-left: 150px;" data-slick-prev="#service-slider5" class="slick-arrow slick-prev"><i class="fa-regular fa-arrow-left-long"></i></button>
-                        <button style="margin-right: 150px;" data-slick-next="#service-slider5" class="slick-arrow slick-next"><i class="fa-regular fa-arrow-right-long"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="row slider-shadow th-carousel" id="service-slider5" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-dollar-sign service-icon"></i>
-                            <h3 class="box-title"><a href="#">Comprehensive Solutions</a></h3>
-                            <p class="service-card_text">From administrative support to field services and major refurbishments, we offer a full spectrum of services to manage your real estate assets effectively.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-tools service-icon"></i>
-                            <h3 class="box-title"><a href="#">Expertise and Experience</a></h3>
-                            <p class="service-card_text">With years of experience, our team is equipped with the knowledge and skills to handle every aspect of corporate real estate management.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-user-cog service-icon"></i>
-                            <h3 class="box-title"><a href="#">Tailored Approach</a></h3>
-                            <p class="service-card_text">We understand that every business is unique. Our services are customized to meet your specific needs, ensuring maximum efficiency and satisfaction.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-clock service-icon"></i>
-                            <h3 class="box-title"><a href="#">Reliability and Quality</a></h3>
-                            <p class="service-card_text">We are committed to delivering the highest standards of service, with a focus on timely execution and quality results.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="service-card style2" style="min-height: 450px;">
-                        <div class="service-content">
-                            <i class="fa-solid fa-shield-alt service-icon"></i>
-                            <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
-                            <p class="service-card_text">We adhere to all local building codes, regulations, and safety standards, ensuring that your project is completed safely and legally.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-
-    <!--==============================
-    WHY CHOOS US END
-    ==============================-->
-
-
-
-
 
 
 
@@ -275,7 +173,7 @@
                             </div>
                             <div class="service-box_content">
                                 <div class="service-default-icon">
-                                    <img src="assets/img/icon/technical-support.png" alt="Icon"> 
+                                    <img src="assets/img/icon/technical-support.png" alt="Icon">
                                     <span class="dots"></span>
                                 </div>
                                 <h3 class="box-title"><a href="#" tabindex="0">Field Service Support</a></h3>
@@ -294,15 +192,180 @@
     </section>
 
     <!--==============================
-SERVICES End
-==============================-->
+    SERVICES End
+    ==============================-->
 
 
 
+
+
+    <!--==============================
+    WHY CHOOS US
+    ==============================-->
+    <section class="space" data-bg-src="assets/img/bg/service5-bg.png" id="service-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title-area">
+                        <span class="sub-title">WHY CHOOSE US</span>
+                        <h2 class="sec-title">Why Choose Our Corporate Real Estate Services?</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel wrapper with navigation buttons -->
+            <div class="carousel-container position-relative">
+                <!-- Previous Button -->
+                <button data-slick-prev="#service-slider5" class="slick-arrow slick-prev">
+                    <i class="fa-solid fa-chevron-left" style="color: black; font-size:50px"></i>
+                </button>
+
+                <!-- Carousel Items -->
+                <div class="row slider-shadow th-carousel" id="service-slider5"
+                    data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2"
+                    data-sm-slide-show="1" data-xs-slide-show="1">
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-gears service-icon"></i>
+                                <h3 class="box-title"><a href="#">Comprehensive Solutions</a></h3>
+                                <p class="service-card_text">From administrative support to field services and major refurbishments, we offer a full spectrum of services to manage your real estate assets effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-tools service-icon"></i>
+                                <h3 class="box-title"><a href="#">Expertise and Experience</a></h3>
+                                <p class="service-card_text">With years of experience, our team is equipped with the knowledge and skills to handle every aspect of corporate real estate management.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-user-cog service-icon"></i>
+                                <h3 class="box-title"><a href="#">Tailored Approach</a></h3>
+                                <p class="service-card_text">We understand that every business is unique. Our services are customized to meet your specific needs, ensuring maximum efficiency and satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-medal service-icon"></i>
+                                <h3 class="box-title"><a href="#">Reliability and Quality</a></h3>
+                                <p class="service-card_text">We are committed to delivering the highest standards of service, with a focus on timely execution and quality results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="service-card style2" style="min-height: 450px;">
+                            <div class="service-content">
+                                <i class="fa-solid fa-shield-alt service-icon"></i>
+                                <h3 class="box-title"><a href="#">Safety & Compliance</a></h3>
+                                <p class="service-card_text">We adhere to all local building codes, regulations, and safety standards, ensuring that your project is completed safely and legally.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right arrow -->
+                <button data-slick-next="#service-slider5" class="slick-arrow slick-next">
+                    <i class="fa-solid fa-chevron-right" style="color: black; font-size:50px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        .carousel-container {
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slick-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-arrow:hover {}
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .carousel-container {
+                padding: 0 20px;
+            }
+
+            .slick-arrow {
+                width: 30px;
+                height: 30px;
+            }
+
+            .slick-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .slick-prev {
+                left: -10px;
+            }
+
+            .slick-next {
+                right: -10px;
+            }
+        }
+    </style>
+
+
+
+    <!--==============================
+    WHY CHOOS US END
+    ==============================-->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
     <?php
+    
     include 'includes/footer.php';
     include 'includes/scripts.php';
     ?>

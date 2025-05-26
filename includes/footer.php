@@ -74,7 +74,8 @@
                             <script>
                                 document.write(new Date().getFullYear());
                             </script> All rights reserved
-                            Made with <i class="far fa-heart"></i> by <a href="http://www.pixellmedia.com/" target="_blank" style="color: #b052be;">PixellMedia</a>
+                            Made with <i class="far fa-heart"></i> by 
+                            <a href="http://www.pixellmedia.com/" target="_blank" style="color: #b052be;">PixellMedia</a>
                         </p>
                     </div>
                     <div class="col-md-5 text-end d-none d-md-block">

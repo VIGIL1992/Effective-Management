@@ -11,30 +11,31 @@
     <meta name="robots" content="INDEX,FOLLOW">
 
     <script>
-    if (window.top !== window.self) {
-        window.top.location = window.self.location;
-    }
+        if (window.top !== window.self) {
+            window.top.location = window.self.location;
+        }
     </script>
     <?php
-        include 'includes/header.php'; 
-        ?>
+      include 'includes/header.php';
+    ?>
 </head>
+
 <body>
-    
+
 
     <?php
-    
-    // include 'includes/navbar.php';
-    include 'includes/navbar_new.php';
-    include 'includes/whatsapp.php';
-    // include 'includes/breadcrumber.php';
-    $page='contact';
+
+        // include 'includes/navbar.php';
+        include 'includes/navbar_new.php';
+        include 'includes/whatsapp.php';
+        include 'includes/breadcrumber.php';
+        $page = 'contact';
     ?>
 
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/contact.jpg" data-overlay="black" data-opacity="7">
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/contact.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Contact Us</h1>
@@ -45,43 +46,18 @@
             </div>
         </div>
     </div>
-    <script>
-    window.addEventListener("scroll", function () {
-        let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-        let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-        let breadcrumbTitle = document.querySelector(".breadcumb-title");
 
-        if (window.scrollY > 500) {
-            breadcrumbWrapper.classList.add("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "none";
-            breadcrumbWrapper.style.background = "var(--title-color)";
-            breadcrumbWrapper.style.backgroundImage = "none";
-            breadcrumbMenu.style.display = "block";
-        } else {
-            breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "block";
-            breadcrumbWrapper.style.background = "";
-            breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/contact.jpg')";
-        }
-    });
-</script>
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
 
-<style>
-    .sticky-breadcrumb {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: var(--title-color);
-        padding: 80px 0 30px;
-        z-index: 10;
-        transition: all 0.3s ease-in-out;
-    }
 
-    .breadcumb-menu {
-        /* display: none; */
-    }
-</style>
     <!--==============================
 Contact Area  
 ==============================-->
@@ -151,10 +127,10 @@ Contact Area
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728669.764433988!2d52.28005248399049!3d24.126835827031982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1703574759065!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    
 
 
-<?php
-    include 'includes/footer.php'; 
+
+    <?php
+    include 'includes/footer.php';
     include 'includes/scripts.php';
-?>
+    ?>

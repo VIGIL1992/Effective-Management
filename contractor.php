@@ -11,66 +11,40 @@
     <meta name="robots" content="INDEX,FOLLOW">
 
     <?php
-    include 'includes/header.php';
-    // include 'includes/navbar.php';
-    include 'includes/navbar_new.php';
-    include 'includes/whatsapp.php';
-    // include 'includes/breadcrumber.php';
+        include 'includes/header.php';
+        // include 'includes/navbar.php';
+        include 'includes/navbar_new.php';
+        include 'includes/whatsapp.php';
+        include 'includes/breadcrumber.php';
 
-    $page = 'contractor';
+        $page = 'contractor';
     ?>
     <!--==============================
     Breadcumb
-============================== -->
-    <div class="breadcumb-wrapper sticky-wrapper zindex " data-bg-src="assets/img/banner/banner12.jpg" data-overlay="black" data-opacity="7">
+    ============================== -->
+    <div class="breadcumb-wrapper zindex" data-bg-src="assets/img/banner/banner12.jpg" data-overlay="black" data-opacity="7">
         <div class="container">
             <div class="breadcumb-content text-center">
                 <h1 class="breadcumb-title">Contractors</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>Contractors</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <script>
-    window.addEventListener("scroll", function () {
-        let breadcrumbWrapper = document.querySelector(".breadcumb-wrapper");
-        let breadcrumbMenu = document.querySelector(".breadcumb-menu");
-        let breadcrumbTitle = document.querySelector(".breadcumb-title");
+    <!-- Sticky Breadcrumb (hidden initially) -->
+    <div class="sticky-breadcumb">
+        <div class="container">
+            <ul class="breadcumb-menu">
+                <li><a href="index.php">Home</a></li>
+                <li>Contractors</li>
+            </ul>
+        </div>
+    </div>
 
-        if (window.scrollY > 500) {
-            breadcrumbWrapper.classList.add("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "none";
-            breadcrumbWrapper.style.background = "var(--title-color)";
-            breadcrumbWrapper.style.backgroundImage = "none";
-            breadcrumbMenu.style.display = "block";
-        } else {
-            breadcrumbWrapper.classList.remove("sticky-breadcrumb");
-            breadcrumbTitle.style.display = "block";
-            breadcrumbWrapper.style.background = "";
-            breadcrumbWrapper.style.backgroundImage = "url('assets/img/banner/banner12.jpg')";
-        }
-    });
-</script>
 
-<style>
-.sticky-breadcrumb {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--title-color);
-    padding: 80px 0 30px;
-    z-index: 10;
-    transition: all 0.3s ease-in-out;
-}
-
-.breadcumb-menu {
-    /* display: none; */
-}
-</style>
     <!--==============================
 Team Area  
 ==============================-->
@@ -99,12 +73,12 @@ Team Area
 
                             EFFECTIVE FACILITIES MANAGEMENT partners with skilled, qualified, and local contractors to meet the diverse service needs of our clients.
                             Every contractor we work with is fully licensed,
-                            insured, and held to the highest standards as outlined in our agreements. We monitor and assess their performance to ensure quality outcomes, 
+                            insured, and held to the highest standards as outlined in our agreements. We monitor and assess their performance to ensure quality outcomes,
                             fair compensation, and continued success. The more efficient and effective the job, the greater the rewards for their dedication and hard work.
 
 
-                            We value the strong relationships we've built with contractors across various fields, 
-                            as they are integral to our success. If you’re ready to collaborate with us, 
+                            We value the strong relationships we've built with contractors across various fields,
+                            as they are integral to our success. If you’re ready to collaborate with us,
                             please fill out the form below to begin the qualification process and join our network. We look forward to working with you!.</p>
                         <h3 class="h5 mb-30">Contact Info</h3>
                         <div class="team-details-info-wrap mb-50">
